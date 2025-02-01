@@ -1,0 +1,1749 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links li {
+    padding: 8px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links li:hover {
+    background-color: #cc1616;
+
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.has-dropdown-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    padding: 10px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.has-dropdown-menu:hover .dropdown {
+    display: block;
+}
+
+.has-dropdown-menu .dropdown ul li a {
+    color: black;
+}
+
+.has-dropdown-menu .dropdown ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.sub-menu-item {
+    position: relative;
+}
+
+.sub-menu-item .sub-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.sub-menu-item:hover .sub-menu {
+    display: block;
+}
+.toggle-btn{
+    display: none;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 50px;
+    color: white;
+
+}
+
+.banner p {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+
+}
+
+.banner button {
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    font-size: 17px;
+    background: transparent;
+    border: 1px solid white;
+
+    color: white;
+    padding: 10px;
+    transition: 0.3s ease-in;
+
+
+}
+
+.banner button:hover {
+    background-color: #cc1616;
+
+}
+
+.about-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.about-content h3 {
+    position: absolute;
+    left: 40%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.about-content h1 {
+    font-size: 52px;
+    color: #444444
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #444444;
+}
+
+.two-column-layout {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.two-column-layout .content {
+    flex: 1;
+}
+
+.content {
+    width: 40%;
+    margin-left: 40px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 30px;
+    font-family: "Raleway", serif;
+}
+
+.content p {
+    width: 80%;
+    color: #444444;
+    font-style: italic;
+    font-size: 16px;
+    margin-left: 30px;
+
+}
+
+.content button {
+    font-size: 16px;
+    padding: 10px;
+    width: 180px;
+    background-color: #cc1616;
+    color: white;
+    border: none;
+    margin-left: 30px;
+}
+
+.content button i {
+    font-size: 20px;
+
+}
+
+.content ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #444444;
+
+}
+
+.content ul li i {
+    color: #cc1616;
+    font-size: 19px;
+    padding-right: 3px;
+}
+
+.two-column-layout .content-left-banner {
+    flex: 1;
+}
+
+.content-left-banner {
+    width: 30%;
+}
+
+.content-left-banner img {
+    width: 500px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 0.4fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.card-container h3 {
+    font-size: 24px;
+    color: #cc1616;
+    font-weight: lighter;
+}
+
+.card-container h4 {
+    font-size: 24px;
+    color: #444444;
+    font-weight: 600;
+    font-family: "Raleway", serif;
+}
+
+.card-container p {
+    font-size: 15px;
+    color: #444444;
+}
+
+.carosal {
+
+    background-color: #f6f6f6;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.carosal img {
+    width: 90px;
+    height: 30px;
+    padding: 20px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(20%);
+
+}
+
+.carosal img:hover {
+    transform: scale(1.10);
+    filter: brightness(100%);
+}
+
+.service-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.service-content h3 {
+    position: absolute;
+    left: 37%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.service-content h1 {
+    font-size: 52px;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+
+.service-content p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.service-layout {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 0.4fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.three-column-layout {
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+
+}
+
+.three-column-layout i {
+    background-color: #cc1616;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.three-column-layout h3 {
+    font-size: 22px;
+    font-family: "Raleway", serif;
+    font-weight: 700;
+
+}
+
+.three-column-layout:hover {
+    background-color: #cc1616;
+    color: white;
+}
+
+.three-column-layout i:hover {
+    background-color: white;
+    color: #cc1616
+}
+
+.call-to-action {
+    width: 90%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.call-to-action img {
+    width: 1330px;
+    height: 400px;
+    filter: brightness(70%);
+}
+
+.call-to-action-content {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: center;
+    color: white;
+}
+
+.call-to-action-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Raleway", serif;
+}
+
+.call-to-action-content p {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.call-to-action-content button {
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.portfolio-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.portfolio-content h3 {
+    position: absolute;
+    left: 35%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.portfolio-content h1 {
+    font-size: 52px;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+
+.portfolio-content p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.pricing-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    /* max-width: 1200px; */
+    padding: 20px;
+    margin: auto;
+    gap: 10px;
+}
+
+.portfolio-info .icons {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.portfolio-info .name {
+    font-family: "Raleway", serif;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    display: flex;
+    transform: translateY(100%);
+    justify-content: space-evenly;
+}
+
+.box:hover .portfolio-info {
+    transform: translateY(0);
+}
+
+.box1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.box2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.box3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.box4 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.box5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.box6 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+
+.pricing-content h3 {
+    position: absolute;
+    left: 39%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.pricing-content h1 {
+    font-size: 52px;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+
+.pricing-content p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-item {
+    padding: 10px;
+    max-width: 450px;
+
+    text-align: center;
+}
+
+.pricing-item a {
+    text-decoration: none;
+    color: #444444;
+    font-family: "Raleway", serif;
+}
+
+.pricing-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Raleway", serif;
+
+}
+
+.pricing-item h4 {
+    font-size: 40px;
+    color: #cc1616;
+    font-weight: 400;
+    font-family: "Raleway", serif;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.item1 {
+    box-shadow: 0 4px 8px rgba(14, 12, 12, 0.1);
+}
+
+.item3 {
+    box-shadow: 0 4px 8px rgba(14, 12, 12, 0.1);
+}
+
+.pricing-item ul .del i {
+    color: #444444
+}
+
+.pricing-item ul li {
+    list-style-type: none;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+    font-family: "Raleway", serif;
+}
+
+.pricing-item ul li i {
+
+    color: #059652;
+}
+
+.item2 {
+    background-color: #cc1616;
+    color: white;
+}
+
+.item2 ul li {
+    padding: 18px;
+    color: white;
+}
+
+.item2 a {
+    color: white;
+}
+
+.item2 h4 {
+    color: white;
+}
+
+.team-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.team-content h3 {
+    position: absolute;
+    left: 43%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.team-content h1 {
+    font-size: 52px;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+
+.team-content p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.members img {
+    max-width: 50%;
+    border-radius: 50%;
+
+}
+
+.members {
+    text-align: center;
+    max-width: 350px;
+}
+
+.members-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-family: "Raleway", serif;
+
+}
+
+.members-content p {
+    font-style: italic;
+    font-size: 13px;
+    color: #444444;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+
+}
+
+.members-content .media i {
+    color: #444444;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.members-content .media i:hover {
+    color: #cc1616;
+}
+
+.contact-content {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-content h3 {
+    position: absolute;
+    left: 38%;
+    top: 2px;
+    font-size: 32px;
+}
+
+.contact-content h1 {
+    font-size: 52px;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.contact-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.contact-info {
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 4px 6px rgba(88, 88, 88, 0.3);
+}
+
+.contact-info i {
+    font-size: 25px;
+    color: #cc1616
+}
+
+.contact-info h3,
+p {
+    font-family: "Raleway", serif;
+}
+
+.info1 {
+    flex-grow: 1.5;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.map {
+    flex-grow: 1;
+    box-shadow: 0px 4px 6px rgba(88, 88, 88, 0.3);
+    max-width: 600px;
+}
+
+.form {
+    padding: 20px;
+    flex-grow: 1;
+    box-shadow: 0px 4px 6px rgba(88, 88, 88, 0.3);
+    max-width: 600px;
+}
+
+.form button {
+    width: 35%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "Raleway", serif;
+    color: white;
+    background-color: #cc1616;
+    border: none;
+    font-size: 17px;
+}
+
+.form [type="text"] {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form [type="email"] {
+    width: 200px;
+    padding: 10px;
+}
+
+.form .subject {
+    width: 428px;
+}
+
+.form textarea {
+    width: 430px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: "Raleway", serif;
+}
+footer{
+    background-color: black;
+    width:100%;
+    height:auto;
+}
+.footer-container{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    width:90%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+.footer-container{
+    margin-top: 30px;
+}
+.footer-box{
+    color:white;
+    margin-top: 20px;
+    max-width: 350px;
+}
+.footer-box a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    transition: 0.5s ease-in-out;
+    font-family: "Raleway", serif;
+}
+.footer-box a:hover{
+    color:#cc1616
+}
+.day-about{
+    padding:20px;
+    max-width:450px;
+    border-top:4px solid  #cc1616;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(223, 222, 222, 0.3);
+    font-family: "Raleway", serif;
+}
+.day-about .social i{
+  font-size: 20px;
+  padding:10px;
+  transition: 0.5s ease-in-out;
+}
+.day-about .social i:hover{
+    color:#cc1616;
+}
+.newsletter{
+    width:400px;
+    font-family: "Raleway", serif;
+}
+.subscribe input{
+    width:300px;
+    padding:15px;
+    background: transparent;
+}
+.newsletter .subscribe{
+    position:relative;
+}
+.subscribe button{
+    position:absolute;
+    right:5%;
+    width:130px;
+    padding:15px;
+    top:1px;
+    background-color: #cc1616;
+    color:white;
+    border: none;
+    font-family: "Raleway", serif;
+    font-size: 15px;
+}
+.copyright{
+    color:white;
+    margin-top: 40px;
+    text-align: center;
+}
+.copyright p{
+   padding-bottom:20px;
+}
+@media(max-width:1024px) {
+    html {
+        overflow-y: scroll;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .banner h1 {
+
+        top: 30%;
+        left: 10%;
+    }
+
+    .banner p {
+
+        top: 60%;
+        left: 10%;
+    }
+
+    .banner button {
+
+        top: 80%;
+        left: 10%;
+    }
+
+    .call-to-action img {
+        width: 950px;
+        height: 300px;
+    }
+
+    .call-to-action-content {
+        top: 10%;
+    }
+
+    .members {
+        max-width: 250px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0;
+    }
+
+    nav {
+        width: 102%;
+        margin-left: 0;
+    }
+
+    .content-left-banner img {
+        width: 400px;
+    }
+
+    .carosal {
+        gap: 0px;
+    }
+
+    .carsoal img {
+        width: 30px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    .pricing-item {
+        max-width: 330px;
+    }
+
+    .contact-form {
+        width: 80%;
+        gap: 10px;
+        margin:auto;
+    }
+    .contact-form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .map {
+        flex-grow: 1; 
+        max-width: 400px;
+
+    }
+    .map iframe{
+        width:400px;
+        height:450px;
+    }
+
+    .form {
+        flex-grow: 1;
+        max-width: 400px;
+    }
+    .form button{
+        width:40%;
+    }
+
+    .form [type="text"] {
+        width: 350px;
+    }
+
+    .form [type="email"] {
+        width: 350px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form .subject {
+        width: 350px;
+    }
+
+    .form textarea {
+        width: 350px;
+    }
+    .newsletter{
+        width:280px;}
+        .subscribe input{
+            width:240px;
+        }
+        .subscribe button{
+            right:0%;
+        }
+}
+
+@media(max-width:768px) {
+    html {
+        overflow-y: scroll;
+    }
+
+    body {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner img {
+        width: 800px;
+        height: 500px;
+        position: relative;
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 50px;
+        color: white;
+
+    }
+
+    .banner p {
+        position: absolute;
+        top: 58%;
+        left: 10%;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .banner button {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+    }
+
+    .about-content h3 {
+
+        left: 30%;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        color: #444444;
+    }
+
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content button {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .content-left-banner {
+        width: 100%;
+    }
+
+    .content-left-banner img {
+        width: 700px;
+        margin-left: 30px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+
+    }
+
+    nav {
+        width: 105%;
+    }
+
+    .carosal {
+        gap: 5px;
+    }
+
+    .carsoal img {
+        width: 50px;
+        height: 20px;
+        padding: 10px;
+    }
+
+    .service-content {
+        width: 80%;
+    }
+
+    .service-content h3 {
+        left: 36%;
+    }
+
+    .service-layout {
+        grid-template-columns: repeat(2, 0.5fr);
+    }
+
+    .call-to-action img {
+        width: 750px;
+        height: 300px;
+    }
+
+    .call-to-action-content {
+        top: 10%;
+    }
+
+    .call-to-action-content p {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        width: 80%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .pricing-content {
+        width: 80%;
+    }
+
+    .pricing-container {
+        /* flex-direction: column; */
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .pricing-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .team-content {
+        width: 80%;
+    }
+
+    .members {
+        max-width: 350px;
+    }
+
+    .members img {
+        width: 30%;
+    }
+
+    .members-content p {
+        width: 50%;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        margin: auto;
+        width:80%;
+        gap:20px;
+    }
+    .contact-form{
+        margin-top: 20px;
+    }
+    .contact-container{
+        width:70%;
+    }
+    .contact-info .info1{
+        flex-grow: 4;
+    }
+.info2{
+    flex-grow: 1;
+}
+.info3{
+    flex-grow: 1;
+}
+.contact-content h3{
+    left:31%;
+}
+    .map {
+        flex-grow: 1;
+        max-width: 600px;
+        margin-left: 10px;
+
+    }
+    .map iframe{
+        width:600px;
+    }
+
+    .form {
+        flex-grow: 1;
+        max-width: 600px;
+    }
+
+    .form [type="text"] {
+        width: 260px;
+    }
+
+    .form [type="email"] {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .form .subject {
+        width: 550px;
+    }
+    .form textarea{
+        width:550px;
+        margin-left: 0;
+    }
+    .newsletter{
+        width:700px;
+    }
+    .newsletter p{
+        width:700px;
+    }
+    .footer-container{
+        justify-content: flex-start;
+    }
+    .subscribe input{
+        width:600px;
+    }
+    .subscribe button{
+        right:-82%;
+    }
+    .footer-container{
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media(max-width:480px) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: grey;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+
+    }
+
+    nav .nav-links .active {
+        display: flex;
+
+    }
+
+    .toggle-btn {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 40px;
+        color: white;
+
+    }
+
+    .banner p {
+        position: absolute;
+        top: 58%;
+        left: 10%;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .banner button {
+        position: absolute;
+        top: 90%;
+        left: 10%;
+    }
+
+    .about-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-content h3 {
+
+        left: 30%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        text-align: center;
+    }
+
+    .content-left-banner img {
+        width: 470px;
+        margin-left: 0px;
+
+    }
+
+    .carosal {
+        display: none;
+    }
+
+    .service-layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .call-to-action img {
+        width: 460px;
+    }
+
+    .portfolio-content {
+        width: 80%;
+    }
+
+    .portfolio-content h3 {
+        position: absolute;
+        left: 28%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .team-content {
+        width: 100%;
+    }
+
+    .team-content h1 {
+        font-size: 42px;
+    }
+
+    .team-content h3 {
+        top: -10px;
+        left: 40%;
+    }
+
+    .pricing-content {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h1 {
+        font-size: 42px;
+        opacity: 0.5;
+    }
+
+    .about-content h3 {
+        top: -10px;
+    }
+    .contact-content{
+        width:80%;
+    }
+    .contact-content h3{
+        top:-10px;
+    }
+    .contact-content h1{
+        font-size: 42px;
+    }
+    .contact-content p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        width:80%;
+    }
+    .map{
+        max-width: 550px;
+        margin-left: 0;
+    }
+    .map iframe{
+        width:380px;
+        height:400px;
+    }
+    .form{
+        max-width: 500px;
+    }
+    .form [type="text"]{
+        width:300px;
+    }
+    .form [type="email"]{
+        width:300px;
+    }
+    .form .subject{
+        width:300px;
+    }
+    .form textarea{
+        width:300px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .newsletter{
+        width:400px;
+    }
+    .newsletter p{
+        width:400px;
+    }
+    .subscribe input{
+        width:350px;
+    }
+    .subscribe button{
+        right:-10%;
+    }
+}
+
+@media(max-width:425px) {
+    .content-left-banner img {
+        width: 400px;
+        margin-left: 0px;
+
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 30px;
+        color: white;
+
+    }
+
+    .banner p {
+
+        top: 55%;
+        left: 5%;
+        font-size: 18px;
+    }
+
+    .banner button {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+    }
+    .about-content h1{
+        font-size: 32px;
+    }
+    .about-content h3{
+       font-size: 22px;
+       position: absolute;
+       top:1px;
+       left:39%;
+    }
+    .about-content p{
+        font-size: 14px;
+    }
+    .content h2{
+        font-size: 1rem;
+    }
+    .content p{
+        font-size: 14px;
+        width:100%;
+    }
+    .service-content h1{
+        font-size: 32px;
+    }
+    .service-content h3{
+        font-size: 22px;
+        top:1px;
+    }
+    .service-content p{
+        font-size: 14px;
+    }
+    .call-to-action-content{
+        top:10px;
+    }
+    .call-to-action-content p{
+        font-size: 14px;
+       
+    }
+    .call-to-action img{
+        width:420px;
+    }
+    .portfolio-content h1{
+        font-size: 32px;
+    }
+    .portfolio-content h3{
+        font-size: 22px;
+        top:1px;
+        left:33%;
+    }
+    .portfolio-content p{
+        font-size: 14px;
+    }
+    .pricing-content h1{
+        font-size: 32px;
+    }
+    .pricing-content h3{
+        font-size: 22px;
+        top:1px;
+        left:40%;
+    }
+    .pricing-content p{
+        font-size: 14px;
+    }
+    .pricing-item h4{
+        font-size: 30px;
+    }
+    .team-content h1{
+        font-size: 32px;
+    }
+    .team-content h3{
+        font-size: 22px;
+        top:1px;
+        left:43%;
+    }
+    .team-content p{
+        font-size: 14px;
+    }
+    .contact-content h1{
+        font-size: 32px;
+    }
+    .contact-content h3{
+        font-size: 22px;
+        top:1px;
+        left:35%;
+    }
+    .contact-content p{
+        font-size: 14px;
+    }
+    .map iframe{
+        width:340px;
+    }
+    .form [type="text"]{
+        width:270px;
+    }
+    .form [type="email"]{
+        width:270px;
+    }
+    .form .subject{
+        width:270px;
+    }
+    .form textarea{
+        width:270px;
+    }
+    .form button{
+        width:50%;
+    }
+    .day-about{
+        max-width: 290px;
+    }
+    .newsletter{
+        width:350px;
+    }
+    .newsletter p{
+        width:350px
+    }
+    .subscribe input{
+        width:300px
+    }
+    .subscribe button{
+        right:15px;
+    }
+    .footer-container{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:375px) {
+    .content-left-banner img {
+        width: 360px;
+        margin-left: 0px;
+
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 30px;
+        color: white;
+
+    }
+
+    .banner p {
+
+        top: 50%;
+        left: 5%;
+
+
+    }
+
+    .banner button {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .map iframe{
+        width:300px;
+        height:400px;
+    }
+    .form{
+        max-width: 500px;
+    }
+    .form [type="text"]{
+        width:230px;
+    }
+    .form [type="email"]{
+        width:230px;
+    }
+    .form .subject{
+        width:230px;
+    }
+    .form textarea{
+        width:230px;
+    }
+    .form button{
+        width:60%;
+    }
+
+}
+
+@media(max-width:320px) {
+    .content-left-banner img {
+        width: 300px;
+        margin-left: 0px;
+
+    }
+    .content p{
+        font-size: 12px;
+        width:90%;
+    }
+    .call-to-action img{
+        width:315px;
+    }
+    .call-to-action-content p{
+        font-size: 12px;
+       
+    }
+    .pricing-item{
+        max-width: 280px;
+        padding:5px;
+        
+    }
+    .pricing-item ul li{
+        padding:8px 0;
+    }
+    .team-members{
+        gap:20px;
+    }
+    .members{
+        max-width: 330px;
+        margin-bottom: 20px;
+        
+    }
+    .map iframe{
+        width:300px;
+        height:400px;
+    }
+    .form{
+        max-width: 500px;
+    }
+    .form [type="text"]{
+        width:220px;
+    }
+    .form [type="email"]{
+        width:220px;
+    }
+    .form .subject{
+        width:220px;
+    }
+    .form textarea{
+        width:220px;
+    }
+    .form button{
+        width:70%;
+    }
+    .contact-form{
+        width:95%;
+    }
+    .contact-container{
+        width:95%;
+    }
+    .day-about{
+        max-width: 240px;
+    }
+    .newsletter{
+        width:240px;
+    }
+    .newsletter p{
+        width:240px
+    }
+    .subscribe input{
+        width:250px
+    }
+    .subscribe button{
+        right:-18%;
+    }
+}
