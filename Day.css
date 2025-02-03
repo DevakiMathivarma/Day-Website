@@ -11,13 +11,8 @@ nav {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
-
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
 }
 
 .logo h3 {
@@ -25,68 +20,97 @@ nav {
     font-size: 25px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
 .nav-links li {
-    padding: 8px;
+    position: relative;
+    list-style: none;
+    padding: 5px;
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 17px;
+     padding: 10px;
+    display: block;
 }
 
 .nav-links li:hover {
     background-color: #cc1616;
-
-}
-
-.nav-links li {
-    position: relative;
 }
 
 .has-dropdown-menu .dropdown {
     display: none;
     position: absolute;
-    top: 45px;
-    right: 0px;
-    padding: 10px;
-    width: 200px;
+    top: 100%;
+    left: 0;
     background-color: white;
+    width: 200px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 1000;
 }
 
 .has-dropdown-menu:hover .dropdown {
     display: block;
 }
 
-.has-dropdown-menu .dropdown ul li a {
-    color: black;
+.has-dropdown-menu .dropdown ul {
+    margin: 0;
+    padding: 0;
 }
 
 .has-dropdown-menu .dropdown ul li {
     list-style: none;
-    padding: 8px;
 }
 
-.sub-menu-item {
-    position: relative;
+.has-dropdown-menu .dropdown ul li a {
+    color: black;
+    padding: 5px;
+    display: block;
+    white-space: nowrap;
+}
+
+.has-dropdown-menu .dropdown ul li:hover {
+    background-color:#cc1616;
 }
 
 .sub-menu-item .sub-menu {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 0;
     right: 100%;
-    width: 200px;
     background-color: white;
-    padding: 10px;
+    width: 200px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-
+    z-index: 1000;
 }
 
 .sub-menu-item:hover .sub-menu {
     display: block;
+}
+
+.sub-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu ul li {
+    list-style: none;
+}
+
+.sub-menu ul li a {
+    color: black;
+    padding: 5px;
+    display: block;
+    white-space: nowrap;
+}
+
+.sub-menu ul li:hover {
+    background-color:#cc1616;
 }
 .toggle-btn{
     display: none;
@@ -125,7 +149,7 @@ nav {
     position: absolute;
     top: 58%;
     left: 10%;
-    font-size: 17px;
+    font-size: 15px;
     background: transparent;
     border: 1px solid white;
 
@@ -138,6 +162,7 @@ nav {
 
 .banner button:hover {
     background-color: #cc1616;
+    border: none;
 
 }
 
@@ -157,7 +182,8 @@ nav {
 
 .about-content h1 {
     font-size: 52px;
-    color: #444444
+    color: #444444;
+    opacity:0.5;
 }
 
 .about-content p {
@@ -264,6 +290,18 @@ nav {
     font-size: 15px;
     color: #444444;
 }
+.arrow i{
+    position:fixed;
+    bottom:10px;
+    right:5px;
+    z-index:2000;
+    font-size: 20px;
+padding:5px;
+   color:white;
+   background-color: #cc1616;
+   
+}
+
 
 .carosal {
 
@@ -271,10 +309,11 @@ nav {
     display: flex;
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .carosal img {
-    width: 90px;
+    max-width: 90px;
     height: 30px;
     padding: 20px;
     margin: auto;
@@ -397,6 +436,10 @@ nav {
     border-radius: 5px;
 
 }
+.call-to-action-content button:hover{
+    background-color: #cc1616;
+    border: none;
+}
 
 .portfolio-content {
     text-align: center;
@@ -429,6 +472,27 @@ nav {
     position: relative;
     width: 50%;
     margin: auto;
+}
+.portfolio-button{
+    width:30%;
+    margin: auto;
+    text-align: center;
+}
+.portfolio-button button{
+    padding:15px;
+    border-radius: 60px;
+   margin-left: 10px;
+   border:none;
+   transition:0.5s ease-in-out;
+
+}
+.portfolio-button .btn1{
+    background-color: #cc1616;
+    color:white;
+}
+.portfolio-button button:hover{
+    background-color: #cc1616;
+    color:white;
 }
 
 .portfolio-container {
@@ -468,8 +532,8 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: rgba(231, 229, 229, 0.6);
+    color: rgb(7, 7, 7);
     padding: 10px;
     display: flex;
     transform: translateY(100%);
@@ -508,6 +572,10 @@ nav {
 .box6 {
     grid-column: span 1;
     grid-row: span 2;
+}
+.box8{
+    grid-row: span 6;
+    grid-column:span 1 ;
 }
 
 
@@ -549,6 +617,12 @@ nav {
     text-decoration: none;
     color: #444444;
     font-family: "Raleway", serif;
+    padding:10px;
+   
+}
+.pricing-item a:hover{
+    background-color: #cc1616;
+    color:white;
 }
 
 .pricing-item h3 {
@@ -565,6 +639,9 @@ nav {
     font-family: "Raleway", serif;
     margin-bottom: 0;
     margin-top: 0;
+}
+.item2 ul li i{
+    color:white;
 }
 
 .item1 {
@@ -880,18 +957,20 @@ footer{
     margin-top: 40px;
     text-align: center;
 }
+.copyright h4{
+    font-size: 14px;
+    font-family: "Raleway", serif;
+}
 .copyright p{
    padding-bottom:20px;
+   font-size: 12px;
+   font-family: "Raleway", serif;
+}
+.Bootstrap{
+    color: #cc1616;
 }
 @media(max-width:1024px) {
-    html {
-        overflow-y: scroll;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
+    
     .banner h1 {
 
         top: 30%;
@@ -911,7 +990,7 @@ footer{
     }
 
     .call-to-action img {
-        width: 950px;
+        width: 1000px;
         height: 300px;
     }
 
@@ -978,6 +1057,14 @@ footer{
     .form button{
         width:40%;
     }
+    html {
+        overflow-y: scroll;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
 
     .form [type="text"] {
         width: 350px;
@@ -1007,16 +1094,26 @@ footer{
 }
 
 @media(max-width:768px) {
-    html {
-        overflow-y: scroll;
-    }
+    
+.nav-links li {
+    position: relative;
+    list-style: none;
+    padding: 4px;
+}
+.nav-links {
+    gap:10px;
+}
 
-    body {
-        overflow-x: hidden;
-        padding: 0;
-        margin: 0;
-    }
-
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+     padding: 8px;
+    display: block;
+}
+.has-dropdown-menu .dropdown{
+    left:-30px;
+}
     .banner img {
         width: 800px;
         height: 500px;
@@ -1060,6 +1157,9 @@ footer{
     .two-column-layout {
         flex-direction: column;
     }
+    .portfolio-button{
+        width:40%;
+    }
 
     .content {
         width: 100%;
@@ -1094,14 +1194,15 @@ footer{
         width: 105%;
     }
 
-    .carosal {
-        gap: 5px;
+    .carosal{
+        gap:0;
+        width:95%;
+        margin: auto;
     }
-
-    .carsoal img {
-        width: 50px;
-        height: 20px;
-        padding: 10px;
+    .carosal img{
+        max-width:70px;
+        height:30px;
+        padding:10px;
     }
 
     .service-content {
@@ -1191,6 +1292,15 @@ footer{
     }
     .contact-info .info1{
         flex-grow: 4;
+    }
+    html {
+        overflow-y: scroll;
+    }
+
+    body {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
     }
 .info2{
     flex-grow: 1;
@@ -1349,11 +1459,16 @@ footer{
         margin-left: 0px;
 
     }
-
-    .carosal {
-        display: none;
+    .portfolio-button{
+        width:60%;
     }
 
+
+    .carosal img{
+        max-width:50px;
+        height:30px;
+        padding:10px;
+    }
     .service-layout {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1479,14 +1594,14 @@ footer{
 
     .banner p {
 
-        top: 55%;
+        top: 45%;
         left: 5%;
         font-size: 18px;
     }
 
     .banner button {
         position: absolute;
-        top: 90%;
+        top: 70%;
         left: 5%;
     }
     .about-content h1{
@@ -1528,6 +1643,10 @@ footer{
     .call-to-action img{
         width:420px;
     }
+    .portfolio-button{
+        width:70%;
+    }
+
     .portfolio-content h1{
         font-size: 32px;
     }
@@ -1645,6 +1764,10 @@ footer{
     .content p{
         font-size: 12px;
     }
+    .portfolio-button{
+        width:80%;
+    }
+
     .map iframe{
         width:300px;
         height:400px;
@@ -1666,6 +1789,14 @@ footer{
     }
     .form button{
         width:60%;
+    }
+    .call-to-action img {
+        width: 369px;
+    }
+    .carosal img{
+        max-width:40px;
+        height:30px;
+        padding:5px;
     }
 
 }
@@ -1703,6 +1834,10 @@ footer{
         margin-bottom: 20px;
         
     }
+    .portfolio-button{
+        width:90%;
+    }
+
     .map iframe{
         width:300px;
         height:400px;
@@ -1745,5 +1880,10 @@ footer{
     }
     .subscribe button{
         right:-18%;
+    }
+    .carosal img{
+        max-width:50px;
+        height:30px;
+        padding:5px;
     }
 }
